@@ -2,70 +2,90 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
 }
 
 body{
     background:#f4f6f9;
 }
 
+/* NAVBAR MODERNA */
 .navbar{
-    background:#198754;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
     color:white;
-    padding:15px;
+    padding:15px 25px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
-}
-
-.menu a{
+.navbar a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
+    margin-left:15px;
+    font-weight:500;
 }
 
-.container{
-    width:90%;
-    margin:auto;
-    margin-top:30px;
+.navbar a:hover{
+    text-decoration:underline;
 }
 
-.card{
-    background:white;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
-
+/* BOTONES */
 .btn{
-    background:#198754;
+    background:#3498db;
     color:white;
+    padding:10px 15px;
     border:none;
-    padding:10px 20px;
-    border-radius:5px;
+    border-radius:8px;
     cursor:pointer;
+    transition:0.3s;
 }
 
 .btn:hover{
-    background:#157347;
+    background:#2980b9;
+    transform:scale(1.05);
 }
 
-input{
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-    margin-bottom:15px;
-    border:1px solid #ccc;
-    border-radius:5px;
+/* CARDS */
+.card{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
-footer{
-    text-align:center;
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* GRID PRODUCTOS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
     padding:20px;
-    margin-top:40px;
+}
+
+/* HERO STYLE */
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-top:10px;
 }
